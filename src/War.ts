@@ -35,6 +35,7 @@ export class War {
 
         if(viking.health <= 0){
             this.vikingArmy.pop()
+
         }
         
         return `${viking.name} has received ${saxon.strength} points of damage`
