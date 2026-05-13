@@ -31,20 +31,20 @@ describe('Soldier', () => {
            expect(soldier.attack()).toEqual(strength);
          });
     });
-    //describe("receiveDamage() method", ()=> {
-        // test("should be a function", ()=>
-        //   expect(typeof(soldier.receiveDamage)).toBe("function"));
+    describe("receiveDamage() method", ()=> {
+         test("should be a function", ()=>
+           expect(typeof(soldier.receiveDamage)).toBe("function"));
 
-        // test("should receive 1 argument (damage)", ()=>
-        //   expect(soldier.receiveDamage.length).toEqual(1));
+         test("should receive 1 argument (damage)", ()=>
+           expect(soldier.receiveDamage.length).toEqual(1));
 
-        // test("should remove the received damage from the health property", ()=> {
-        //   soldier.receiveDamage(50);
-        //   expect(soldier.health).toEqual(health - 50);
-        // });
+         test("should remove the received damage from the health property", ()=> {
+           soldier.receiveDamage(50);
+           expect(soldier.health).toEqual(health - 50);
+         });
 
-        // test("shouldn't return anything", ()=>
-        //   expect(soldier.receiveDamage(50)).toEqual(undefined));
+         test("shouldn't return anything", ()=>
+           expect(soldier.receiveDamage(50)).toEqual(undefined));
 
-       // })
+        })
 })

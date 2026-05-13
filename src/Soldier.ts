@@ -9,4 +9,8 @@ export class Soldier {
     attack(){
         return this.strength
     }
+
+    receiveDamage(damage: number){
+        this.health = this.health - damage
+    }
 }
